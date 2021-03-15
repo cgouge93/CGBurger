@@ -3,8 +3,6 @@ body {
     color: white;
 }
 
-img {
-    height: 200px;
-    width: auto;
-    text-align:center;
+h1, h2 {
+    font-family: 'Pacifico', cursive;
 }
