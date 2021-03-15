@@ -1,8 +1,13 @@
 body {
-    background-color: #cb7c64;
+    background-color: #88292F;
     color: white;
 }
 
 h1, h2 {
     font-family: 'Pacifico', cursive;
+}
+
+.btn-small {
+    background-color: #0F8B8D;
+    color: white;
 }

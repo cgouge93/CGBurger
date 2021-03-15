@@ -1,11 +1,11 @@
-<div>
+<div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-4 text-center container">
+        <div class="col-12 text-center container">
             <h1>Eat-da-Burger!</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-4 mt-4 container" align="center">
+        <div class="col-md-4 col-sm-10 mt-4 container" align="center">
             <h2>To be devoured:</h2>
             <ul class="mt-4 list-unstyled">
                 {{#each burgers}}
@@ -15,17 +15,18 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col-4 container">
+        <div class="col-md-4 col-sm-10 container">
             <p align="center">Add burgers that you want to try!</p>
             <form id="create-form">
                 <div class="form-group" align="center">
                     <label for="burger" class="burger-label">Add a burger:</label>
+                    <br>
                     <input type="text" id="burger">
-                    <button class="btn btn-secondary shadow ml-3" type="submit">Add burger</button>
+                    <button class="btn-small shadow ml-3 d-inline" type="submit">Add burger</button>
                 </div>
             </form>
         </div>
-        <div class="col-4 mt-4 container" align="center">
+        <div class="col-md-4 col-sm-10 mt-4 container" align="center">
             <h2>Devoured:</h2>
             <ul class="mt-4 list-unstyled">
                 {{#each burgers}}
