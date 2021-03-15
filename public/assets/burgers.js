@@ -41,7 +41,7 @@ if (devour) {
         devoured: true,
       };
 
-      fetch(`/api/burgers/${id}`, {
+      fetch(('/api/burgers/' + id), {
         method: "PUT",
         headers: {
           Accept: "application/json",
@@ -50,7 +50,13 @@ if (devour) {
 
         body: JSON.stringify(newDevourState),
       }).then((response) => {
-        location.reload("/");
+        // location.reload("/");
+        if (response.ok) {
+            console.log(`changed devoured to: ${newDevour}`);
+            location.reload('/');
+          } else {
+            alert('something went wrong!');
+          }
       });
     });
   });
